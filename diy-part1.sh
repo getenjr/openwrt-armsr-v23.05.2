@@ -22,8 +22,8 @@ git tag -l
 git checkout v23.05.4
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
-# chmod +x $GITHUB_WORKSPACE/lede/copy-amd64.sh
-# $GITHUB_WORKSPACE/lede/copy-amd64.sh
+chmod +x $GITHUB_WORKSPACE/lede/copy-amd64.sh
+$GITHUB_WORKSPACE/lede/copy-amd64.sh
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 mkdir package/ming

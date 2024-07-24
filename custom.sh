@@ -14,3 +14,11 @@ echo srv-host=_vlmcs._tcp.lan,OpenWrt.lan,1688,0,100 >> /etc/dnsmasq.conf
 
 # 解决Kmod相关软件包无法安装问题，刷入系统后使/usr/lib/opkg/status中的hash和安装kmod软件包时出错的hash一致。
 sed -i 's/060d4a88a59ff936e5d09f59b94a0195/b70ee1516753f10c063dd361f74167d4/g' /usr/lib/opkg/status
+
+#5.更换lede源码中自带argon主题和design主题
+rm -rf feeds/luci/themes/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/themes/luci-theme-design && git clone --depth 1 https://github.com/gngpp/luci-theme-design feeds/luci/themes/luci-theme-design
+rm -rf feeds/luci/applications/luci-app-design-config && git clone --depth 1 https://github.com/gngpp/luci-app-design-config feeds/luci/applications/luci-app-design-config
+
+#7.修改主机名
+sed -i "s/hostname='OpenWrt'/hostname='Advan_AT01'/g" package/base-files/files/bin/config_generate

@@ -18,7 +18,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 git fetch --tags
 git tag -l
  
-# Use OpenWrt 19.07.7 release
+Use OpenWrt 19.07.7 release
 git checkout v23.05.4
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 

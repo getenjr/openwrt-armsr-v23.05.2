@@ -6,11 +6,11 @@ CONFIG_MODULES=y
 CONFIG_HAVE_DOT_CONFIG=y
 CONFIG_HOST_OS_LINUX=y
 # CONFIG_HOST_OS_MACOS is not set
-CONFIG_DEFAULT_TARGET_armsr_armv8=y
+# CONFIG_DEFAULT_TARGET_armsr_armv8 is not set
 # CONFIG_TARGET_airoha is not set
 # CONFIG_TARGET_sunxi is not set
 # CONFIG_TARGET_apm821xx is not set
-CONFIG_TARGET_armsr=y
+# CONFIG_TARGET_armsr is not set
 # CONFIG_TARGET_ath25 is not set
 # CONFIG_TARGET_ath79 is not set
 # CONFIG_TARGET_bcm27xx is not set
@@ -49,8 +49,8 @@ CONFIG_TARGET_armsr=y
 # CONFIG_TARGET_zynq is not set
 # CONFIG_TARGET_x86 is not set
 # CONFIG_TARGET_armsr_armv7 is not set
-CONFIG_TARGET_armsr_armv8=y
-CONFIG_TARGET_MULTI_PROFILE=y
+# CONFIG_TARGET_armsr_armv8 is not set
+# CONFIG_TARGET_MULTI_PROFILE is not set
 # CONFIG_TARGET_armsr_armv8_DEVICE_generic is not set
 
 #
